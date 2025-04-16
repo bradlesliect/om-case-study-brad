@@ -1,0 +1,4 @@
+download and install python 3.10
+browse to directory containing "script.py"
+execute script
+Check results for comments, changes, errors
