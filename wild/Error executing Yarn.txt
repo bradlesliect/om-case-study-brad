@@ -1,0 +1,149 @@
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild> yarn install
+yarn install v1.22.22
+info No lockfile found.
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+
+success Saved lockfile.
+Done in 0.34s.
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild> npx @backstage/create-app
+? Enter a name for the app [required] brad-backstage
+
+Creating the app...
+
+ Checking if the directory is available:
+  checking      brad-backstage ✔
+
+ Creating a temporary app directory:
+
+ Preparing files:
+  copying       .dockerignore ✔ 
+  copying       .eslintignore ✔
+  templating    .eslintrc.js.hbs ✔ 
+  templating    .gitignore.hbs ✔
+  copying       .prettierignore ✔
+  copying       app-config.local.yaml ✔ 
+  copying       app-config.production.yaml ✔
+  templating    app-config.yaml.hbs ✔ 
+  templating    backstage.json.hbs ✔ 
+  templating    catalog-info.yaml.hbs ✔
+  templating    package.json.hbs ✔
+  copying       playwright.config.ts ✔
+  copying       tsconfig.json ✔ 
+  copying       README.md ✔ 
+  copying       yarn.lock ✔
+  copying       README.md ✔
+  copying       yarn-4.4.1.cjs ✔ 
+  templating    .yarnrc.yml.hbs ✔ 
+  copying       entities.yaml ✔
+  copying       org.yaml ✔
+  copying       template.yaml ✔
+  copying       catalog-info.yaml ✔
+  copying       index.js ✔ 
+  copying       package.json ✔
+  copying       README.md ✔
+  templating    .eslintrc.js.hbs ✔
+  copying       Dockerfile ✔
+  templating    package.json.hbs ✔
+  copying       README.md ✔ 
+  copying       index.ts ✔
+  copying       .eslintignore ✔
+  templating    package.json.hbs ✔
+  templating    .eslintrc.js.hbs ✔
+  copying       app.test.ts ✔
+  copying       android-chrome-192x192.png ✔
+  copying       apple-touch-icon.png ✔
+  copying       favicon-16x16.png ✔
+  copying       favicon-32x32.png ✔
+  copying       favicon.ico ✔
+  copying       index.html ✔
+  copying       manifest.json ✔
+  copying       safari-pinned-tab.svg ✔
+  copying       robots.txt ✔
+  copying       apis.ts ✔
+  copying       App.test.tsx ✔
+  copying       App.tsx ✔
+  copying       setupTests.ts ✔
+  copying       EntityPage.tsx ✔
+  copying       SearchPage.tsx ✔
+  copying       index.ts ✔
+  copying       LogoIcon.tsx ✔
+  copying       LogoFull.tsx ✔
+  copying       Root.tsx ✔
+
+ Moving to final location:
+  moving        brad-backstage ✔
+  fetching      yarn.lock seed ✔
+
+ Installing dependencies:
+  executing     yarn install ◝
+
+⏱️  It's taking a long time to install dependencies, you may want to exit (Ctrl-C) and run 'yarn install' and 'yarn tsc' manually
+
+  executing     yarn install ◜ Terminate batch job (Y/N)? N
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild> yarn tsc
+yarn run v1.22.22
+error Couldn't find a package.json file in "C:\\Users\\OM89671\\Documents\\GitHub\\om-case-study-brad\\wild"
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild> cd .\brad-backstage\
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild\brad-backstage> yarn dev
+Usage Error: Couldn't find the node_modules state file - running an install might help (findPackageLocation)
+
+$ yarn run [--inspect] [--inspect-brk] [-T,--top-level] [-B,--binaries-only] [--require #0] <scriptName> ...
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild\brad-backstage> yarn install
+➤ YN0000: · Yarn 4.4.1
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed in 5s 395ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ @testing-library/react is listed by your project with version 14.3.1 (pc9eb9), which doesn't satisfy what @backstage/test-utils requests (^16.0.0).
+➤ YN0060: │ react is listed by your project with version 18.3.1 (pd98da), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0060: │ react-dom is listed by your project with version 18.3.1 (pfa800), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0002: │ app@workspace:packages/app doesn't provide @types/react (pceee1), requested by @backstage/app-defaults and other dependencies.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 54s 323ms
+➤ YN0000: ┌ Link step
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild\brad-backstage> yarn add @testing-library/react@^16.0.0
+➤ YN0000: · Yarn 4.4.1
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed in 7s 530ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ @testing-library/react is listed by your project with version 14.3.1 (pc9eb9), which doesn't satisfy what @backstage/test-utils requests (^16.0.0).
+➤ YN0060: │ react is listed by your project with version 18.3.1 (pd98da), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0060: │ react-dom is listed by your project with version 18.3.1 (pfa800), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0002: │ app@workspace:packages/app doesn't provide @types/react (pceee1), requested by @backstage/app-defaults and other dependencies.
+➤ YN0002: │ root@workspace:. doesn't provide @testing-library/dom (p4d72c), requested by @testing-library/react.
+➤ YN0002: │ root@workspace:. doesn't provide react (p44cfe), requested by @testing-library/react.
+➤ YN0002: │ root@workspace:. doesn't provide react-dom (pec1ab), requested by @testing-library/react.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 1m 35s
+➤ YN0000: ┌ Link step
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild\brad-backstage> yarn remove @testing-library/react @types/react react react-dom @testing-library/dom
+Usage Error: Patterns @types/react, react, react-dom, @testing-library/dom don't match any packages referenced by this workspace
+
+$ yarn remove [-A,--all] [--mode #0] ...
+PS C:\Users\OM89671\Documents\GitHub\om-case-study-brad\wild\brad-backstage> yarn add @testing-library/react@^16.0.0
+➤ YN0000: · Yarn 4.4.1
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed in 17s 805ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ @testing-library/react is listed by your project with version 14.3.1 (pc9eb9), which doesn't satisfy what @backstage/test-utils requests (^16.0.0).
+➤ YN0060: │ react is listed by your project with version 18.3.1 (pd98da), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0060: │ react-dom is listed by your project with version 18.3.1 (pfa800), which doesn't satisfy what @material-ui/core and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0002: │ app@workspace:packages/app doesn't provide @types/react (pceee1), requested by @backstage/app-defaults and other dependencies.
+➤ YN0002: │ root@workspace:. doesn't provide @testing-library/dom (p4d72c), requested by @testing-library/react.
+➤ YN0002: │ root@workspace:. doesn't provide react (p44cfe), requested by @testing-library/react.
+➤ YN0002: │ root@workspace:. doesn't provide react-dom (pec1ab), requested by @testing-library/react.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed in 0s 220ms
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 1m 34s
+➤ YN0000: ┌ Link step
